@@ -179,17 +179,25 @@ IACDM was developed and validated in production R&D projects (2025–2026) and r
 ### The 8-phase IACDM cycle
 
 ```mermaid
-flowchart LR
-    P0["0<br/>Problem<br/>Discovery"] --> P1["1<br/>Architecture"]
-    P1 --> P2["2<br/>Adversarial<br/>Critique ⚔️"]
-    P2 --> P3["3<br/>Simplification"]
-    P3 -->|"Δ < 15%<br/>zero critical"| P4["4<br/>Convergence<br/>Gate"]
-    P3 -->|"Δ ≥ 15%<br/>or critical found"| P2
-    P4 --> P5["5<br/>Code<br/>Implementation"]
-    P5 --> P6["6<br/>Tests"]
-    P6 --> P7["7<br/>Post-Review"]
+flowchart TD
+    subgraph row1["Design"]
+        P0["0 · Problem Discovery"] --> P1["1 · Architecture"]
+        P1 --> P2["⚔️ 2 · Adversarial Critique"]
+        P2 --> P3["3 · Simplification"]
+        P3 -->|"Δ ≥ 15% or critical"| P2
+    end
+
+    subgraph row2["Build"]
+        P4["4 · Convergence Gate"] --> P5["5 · Code Implementation"]
+        P5 --> P6["6 · Tests"]
+        P6 --> P7["7 · Post-Review"]
+    end
+
+    P3 -->|"Δ < 15%, zero critical"| P4
 
     style P2 fill:#4a1942,color:#fff,stroke:#9b59b6
+    style row1 fill:#111,stroke:#444
+    style row2 fill:#111,stroke:#444
 ```
 
 **Versus operates primarily at Phase 2** — the adversarial critique layer that attacks each architectural decision with specialized lenses before any code is written or accepted.
