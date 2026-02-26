@@ -180,14 +180,14 @@ IACDM was developed and validated in production R&D projects (2025–2026) and r
 
 ```mermaid
 flowchart LR
-    P0["0\nProblem\nDiscovery"] --> P1["1\nArchitecture"]
-    P1 --> P2["2\nAdversarial\nCritique ⚔️"]
-    P2 --> P3["3\nSimplification"]
-    P3 -->|"Δ < 15%\nzero critical"| P4["4\nConvergence\nGate"]
-    P3 -->|"Δ ≥ 15%\nor critical found"| P2
-    P4 --> P5["5\nCode\nImplementation"]
-    P5 --> P6["6\nTests"]
-    P6 --> P7["7\nPost-Review"]
+    P0["0<br/>Problem<br/>Discovery"] --> P1["1<br/>Architecture"]
+    P1 --> P2["2<br/>Adversarial<br/>Critique ⚔️"]
+    P2 --> P3["3<br/>Simplification"]
+    P3 -->|"Δ < 15%<br/>zero critical"| P4["4<br/>Convergence<br/>Gate"]
+    P3 -->|"Δ ≥ 15%<br/>or critical found"| P2
+    P4 --> P5["5<br/>Code<br/>Implementation"]
+    P5 --> P6["6<br/>Tests"]
+    P6 --> P7["7<br/>Post-Review"]
 
     style P2 fill:#4a1942,color:#fff,stroke:#9b59b6
 ```
