@@ -1,0 +1,89 @@
+Copyright (c) 2025–2026 Jasmine Moreira. All rights reserved.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+VERSUS FOR COPILOT — PROPRIETARY SOFTWARE LICENSE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+PART I — SOFTWARE (Code, binaries, extension package)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+The software component of this project — including but not limited to
+source code, compiled binaries, extension packages, prompt logic, and
+configuration files — is proprietary and confidential.
+
+All rights reserved. No part of the software may be:
+
+  · copied, reproduced, or duplicated in any form;
+  · modified, adapted, or translated;
+  · distributed, sublicensed, or transferred to any third party;
+  · used as the basis for derivative works;
+  · reverse engineered, decompiled, or disassembled;
+
+without the prior written permission of Jasmine Moreira.
+
+Unauthorized use, reproduction, or distribution of the software, in
+whole or in part, may result in civil and criminal penalties and will
+be prosecuted to the maximum extent possible under applicable law.
+
+
+PART II — METHODOLOGY DOCUMENTATION (IACDM)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+The IACDM (Interactive Adversarial Convergence Development Methodology)
+documentation — including technical foundation documents, diagrams,
+phase descriptions, and theoretical frameworks contained in the /docs
+directory of this repository — is made available under the following
+terms:
+
+PERMITTED:
+  ✓ Reading and studying the methodology for personal or professional use
+  ✓ Citing the methodology in academic papers, articles, or presentations,
+    with proper attribution (see citation format below)
+  ✓ Applying the methodology principles in your own development practice
+  ✓ Sharing links to this repository
+
+NOT PERMITTED without written permission:
+  ✗ Reproducing substantial portions of the documentation in other works
+  ✗ Publishing derivative methodology frameworks based on IACDM
+    without explicit attribution and written consent
+  ✗ Commercial use of the documentation content
+  ✗ Claiming authorship or co-authorship of the methodology
+
+
+CITATION FORMAT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+When citing the IACDM methodology, please use:
+
+  Moreira, J. (2025). IACDM: Interactive Adversarial Convergence
+  Development Methodology — Technical Foundation.
+  https://github.com/jasminemoreira/Versus
+
+
+TRADEMARKS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+"Versus for Copilot", "IACDM", and "Iterative Convergence" as applied
+to software development methodology are identifiers associated with the
+work of Jasmine Moreira. Use of these names in other projects or
+products requires written permission.
+
+
+DISCLAIMER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+THE SOFTWARE AND DOCUMENTATION ARE PROVIDED "AS IS", WITHOUT WARRANTY
+OF ANY KIND, EXPRESS OR IMPLIED. IN NO EVENT SHALL THE AUTHOR BE LIABLE
+FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM USE OF THE
+SOFTWARE OR METHODOLOGY.
+
+
+CONTACT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+For permissions, licensing inquiries, or collaboration:
+  GitHub: https://github.com/jasminemoreira
+  Marketplace: https://marketplace.visualstudio.com/publishers/JasmineMoreira
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Jasmine Moreira — 2025–2026
