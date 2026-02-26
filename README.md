@@ -65,12 +65,12 @@ The verification gap is closed at the source.
 
 ```mermaid
 flowchart LR
-    A[👤 Developer] -->|prompt| B[🤖 Copilot\nGenerative Agent]
-    B -->|suggestion| C{⚔️ Versus\nAdversarial Layer}
-    C -->|Assumptions lens| D[🔍 What does this\nassume without declaring?]
-    C -->|Architectural lens| E[🏗️ Can each part be\ntested in isolation?]
-    C -->|Implementability lens| F[⚙️ Is the scope\nexplicit enough?]
-    C -->|Contextual lenses| G[🔒 Security\n⚡ Performance\n📋 Compliance]
+    A[👤 Developer] -->|prompt| B["🤖 Copilot<br/>Generative Agent"]
+    B -->|suggestion| C{"⚔️ Versus<br/>Adversarial Layer"}
+    C -->|Assumptions lens| D["🔍 What does this<br/>assume without declaring?"]
+    C -->|Architectural lens| E["🏗️ Can each part be<br/>tested in isolation?"]
+    C -->|Implementability lens| F["⚙️ Is the scope<br/>explicit enough?"]
+    C -->|Contextual lenses| G["🔒 Security<br/>⚡ Performance<br/>📋 Compliance"]
     D & E & F & G --> H[📊 Critique Report]
     H --> A
 ```
@@ -144,14 +144,14 @@ flowchart TD
         direction TB
         G1[Receives prompt]
         G2[Generates artifact]
-        G3["❌ Cannot verify\nown output"]
+        G3["❌ Cannot verify<br/>own output"]
         G1 --> G2 --> G3
     end
 
     subgraph VA["Verification Agents (VA)"]
         direction TB
-        VA1["🤖 VA-Automatic\nlinters · type checkers · tests"]
-        VA2["👤 VA-Human\noperator judgment"]
+        VA1["🤖 VA-Automatic<br/>linters · type checkers · tests"]
+        VA2["👤 VA-Human<br/>operator judgment"]
     end
 
     GA -->|artifact| VA
