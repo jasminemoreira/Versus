@@ -4,10 +4,10 @@
 
 **An adversarial verification layer for GitHub Copilot**
 
-[![VS Code Marketplace](https://img.shields.io/visual-studio-marketplace/v/JasmineMoreira.versus-for-copilot?label=VS%20Marketplace&logo=visual-studio-code&logoColor=white&color=0066b8)](https://marketplace.visualstudio.com/items?itemName=JasmineMoreira.versus-for-copilot)
-[![Installs](https://img.shields.io/visual-studio-marketplace/i/JasmineMoreira.versus-for-copilot?color=0066b8)](https://marketplace.visualstudio.com/items?itemName=JasmineMoreira.versus-for-copilot)
+[![VS Marketplace](https://img.shields.io/badge/VS%20Marketplace-Versus%20for%20Copilot-0066b8?logo=visual-studio-code&logoColor=white)](https://marketplace.visualstudio.com/items?itemName=JasmineMoreira.versus-for-copilot)
 [![License](https://img.shields.io/badge/license-Proprietary-red)](./LICENSE)
-[![Author](https://img.shields.io/badge/author-Jasmine%20Moreira-blueviolet)](https://github.com/JasmineMoreira)
+[![Author](https://img.shields.io/badge/author-Jasmine%20Moreira-blueviolet)](https://github.com/jasminemoreira)
+[![IACDM](https://img.shields.io/badge/methodology-IACDM-4a1942)](./docs/iacdm_technical_foundation_v2_en.md)
 
 *Copilot proposes. Versus critiques.*
 
