@@ -111,14 +111,14 @@ Versus applies two categories of lenses: universal (every suggestion) and contex
 For each critique session, Versus produces a **coverage matrix** — a bidimensional map (suggestions × lenses) showing finding distribution by severity.
 
 ```mermaid
-quadrantChart
-    title Coverage Matrix — Finding Severity
-    x-axis Low Impact --> High Impact
-    y-axis Low Confidence --> High Confidence
-    quadrant-1 Critical — block
-    quadrant-2 Important — decide
-    quadrant-3 Suggestion — defer
-    quadrant-4 Monitor
+flowchart LR
+    F["📋 Finding"] --> S1["🔴 Critical<br/>Zero tolerance<br/>Block acceptance"]
+    F --> S2["🟡 Important<br/>Explicit decision<br/>Resolve or accept risk"]
+    F --> S3["🟢 Suggestion<br/>Can be deferred<br/>Address in next iteration"]
+
+    style S1 fill:#7a1a1a,color:#fff,stroke:#c0392b
+    style S2 fill:#7a5c00,color:#fff,stroke:#f39c12
+    style S3 fill:#1a4a2a,color:#fff,stroke:#27ae60
 ```
 
 | Severity | Color | Action |
