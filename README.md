@@ -4,8 +4,8 @@
 
 **An adversarial verification layer for AI coding assistants**
 
-[![Versus · Copilot](https://img.shields.io/badge/Versus%20·%20Copilot-VS%20Marketplace-0066b8?logo=visual-studio-code&logoColor=white)](https://marketplace.visualstudio.com/items?itemName=JasmineMoreira.versus-for-copilot)
-[![Versus · Claude](https://img.shields.io/badge/Versus%20·%20Claude-VS%20Marketplace-c47a00?logo=visual-studio-code&logoColor=white)](https://marketplace.visualstudio.com/items?itemName=JasmineMoreira.versus-for-claude)
+[![Versus · Copilot](https://img.shields.io/badge/Versus%20·%20Copilot-VS%20Marketplace-0066b8?logo=visual-studio-code&logoColor=white)](https://marketplace.visualstudio.com/items?itemName=JasmineMoreira.versus-copilot)
+[![Versus · Claude](https://img.shields.io/badge/Versus%20·%20Claude-VS%20Marketplace-c47a00?logo=visual-studio-code&logoColor=white)](https://marketplace.visualstudio.com/items?itemName=JasmineMoreira.versus-claude)
 [![License](https://img.shields.io/badge/license-Proprietary-red)](./LICENSE)
 [![Author](https://img.shields.io/badge/author-Jasmine%20Moreira-blueviolet)](https://github.com/jasminemoreira)
 [![IACDM](https://img.shields.io/badge/methodology-IACDM-4a1942)](./docs/iacdm_technical_foundation_v2_en.md)
@@ -66,8 +66,8 @@ The verification gap is closed at the source.
 
 | Extension | AI Assistant | Marketplace |
 |-----------|-------------|-------------|
-| **Versus · Copilot** | GitHub Copilot | [Install](https://marketplace.visualstudio.com/items?itemName=JasmineMoreira.versus-for-copilot) |
-| **Versus · Claude** | Claude (Anthropic) | [Install](https://marketplace.visualstudio.com/items?itemName=JasmineMoreira.versus-for-claude) |
+| **Versus · Copilot** | GitHub Copilot | [Install](https://marketplace.visualstudio.com/items?itemName=JasmineMoreira.versus-copilot) |
+| **Versus · Claude** | Claude (Anthropic) | [Install](https://marketplace.visualstudio.com/items?itemName=JasmineMoreira.versus-claude) |
 
 Same methodology. Same lenses. Same adversarial posture. Different integration layer.
 
@@ -244,12 +244,12 @@ This is not a design choice — it is a structural constraint. A model cannot re
 
 **Versus · Copilot** — for GitHub Copilot users:
 ```
-ext install JasmineMoreira.versus-for-copilot
+ext install JasmineMoreira.versus-copilot
 ```
 
 **Versus · Claude** — for Claude (Anthropic) users:
 ```
-ext install JasmineMoreira.versus-for-claude
+ext install JasmineMoreira.versus-claude
 ```
 
 Or search **"Versus"** in the VS Code Extensions panel.
