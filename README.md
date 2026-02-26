@@ -1,15 +1,16 @@
-# Versus for Copilot
+# Versus
 
 <div align="center">
 
-**An adversarial verification layer for GitHub Copilot**
+**An adversarial verification layer for AI coding assistants**
 
-[![VS Marketplace](https://img.shields.io/badge/VS%20Marketplace-Versus%20for%20Copilot-0066b8?logo=visual-studio-code&logoColor=white)](https://marketplace.visualstudio.com/items?itemName=JasmineMoreira.versus-for-copilot)
+[![Versus · Copilot](https://img.shields.io/badge/Versus%20·%20Copilot-VS%20Marketplace-0066b8?logo=visual-studio-code&logoColor=white)](https://marketplace.visualstudio.com/items?itemName=JasmineMoreira.versus-for-copilot)
+[![Versus · Claude](https://img.shields.io/badge/Versus%20·%20Claude-VS%20Marketplace-c47a00?logo=visual-studio-code&logoColor=white)](https://marketplace.visualstudio.com/items?itemName=JasmineMoreira.versus-for-claude)
 [![License](https://img.shields.io/badge/license-Proprietary-red)](./LICENSE)
 [![Author](https://img.shields.io/badge/author-Jasmine%20Moreira-blueviolet)](https://github.com/jasminemoreira)
 [![IACDM](https://img.shields.io/badge/methodology-IACDM-4a1942)](./docs/iacdm_technical_foundation_v2_en.md)
 
-*Copilot proposes. Versus critiques.*
+*The AI proposes. Versus critiques.*
 
 </div>
 
@@ -38,7 +39,7 @@ Output is optimized for **statistical plausibility**, not correctness. The model
 ```
 Without verification layer:
 
-prompt → Copilot → suggestion → you accept → shipped
+prompt → AI assistant → suggestion → you accept → shipped
 
 The verification gap is open. Errors are invisible until production.
 ```
@@ -49,23 +50,32 @@ The verification gap is open. Errors are invisible until production.
 
 ## What Versus does
 
-Versus implements a **structured adversarial critique layer** on top of GitHub Copilot suggestions, based on the [IACDM methodology](#the-theory-behind-versus-iacdm).
+Versus implements a **structured adversarial critique layer** on top of AI coding assistant suggestions, based on the [IACDM methodology](#the-theory-behind-versus-iacdm).
 
-Instead of asking "is this suggestion good?", Versus applies specialized critical lenses to each Copilot suggestion — systematically, before you accept.
+Instead of asking "is this suggestion good?", Versus applies specialized critical lenses to each suggestion — systematically, before you accept.
 
 ```
 With Versus:
 
-prompt → Copilot → suggestion → Versus critiques → you decide → shipped
+prompt → AI assistant → suggestion → Versus critiques → you decide → shipped
 
 The verification gap is closed at the source.
 ```
+
+### Extensions
+
+| Extension | AI Assistant | Marketplace |
+|-----------|-------------|-------------|
+| **Versus · Copilot** | GitHub Copilot | [Install](https://marketplace.visualstudio.com/items?itemName=JasmineMoreira.versus-for-copilot) |
+| **Versus · Claude** | Claude (Anthropic) | [Install](https://marketplace.visualstudio.com/items?itemName=JasmineMoreira.versus-for-claude) |
+
+Same methodology. Same lenses. Same adversarial posture. Different integration layer.
 
 ### The adversarial critique model
 
 ```mermaid
 flowchart LR
-    A[👤 Developer] -->|prompt| B["🤖 Copilot<br/>Generative Agent"]
+    A[👤 Developer] -->|prompt| B["🤖 AI Assistant<br/>Generative Agent"]
     B -->|suggestion| C{"⚔️ Versus<br/>Adversarial Layer"}
     C -->|Assumptions lens| D["🔍 What does this<br/>assume without declaring?"]
     C -->|Architectural lens| E["🏗️ Can each part be<br/>tested in isolation?"]
@@ -75,7 +85,7 @@ flowchart LR
     H --> A
 ```
 
-The generative agent (Copilot) and the verification agent (Versus) are **structurally separated**. This is not cosmetic — it is a fundamental property. An agent cannot reliably verify its own output. Verification must always be external.
+The generative agent (AI assistant) and the verification agent (Versus) are **structurally separated**. This is not cosmetic — it is a fundamental property. An agent cannot reliably verify its own output. Verification must always be external.
 
 ---
 
@@ -232,15 +242,19 @@ This is not a design choice — it is a structural constraint. A model cannot re
 
 ## Installation
 
-Install directly from the VS Code Marketplace:
-
+**Versus · Copilot** — for GitHub Copilot users:
 ```
 ext install JasmineMoreira.versus-for-copilot
 ```
 
-Or search **"Versus for Copilot"** in the Extensions panel.
+**Versus · Claude** — for Claude (Anthropic) users:
+```
+ext install JasmineMoreira.versus-for-claude
+```
 
-**Requirements:** VS Code 1.85+, GitHub Copilot extension active.
+Or search **"Versus"** in the VS Code Extensions panel.
+
+**Requirements:** VS Code 1.85+, respective AI assistant extension active.
 
 ---
 
