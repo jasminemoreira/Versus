@@ -258,10 +258,9 @@ Or search **"Versus"** in the VS Code Extensions panel.
 
 ---
 
-## Release Notes
+## Documentation
 
-- **[Versus for Claude — Release Notes](./docs/claude-release-notes.md)**
-- **[Unified Changelog](./CHANGELOG.md)**
+- **[Versus for Claude — Details & Changelog](./docs/claude-details.md)** — features, hooks, safeguards, LLM compatibility, quick start, changelog
 
 ---
 
