@@ -23,6 +23,7 @@ Versus implements the AG/AV (Generative Agent / Verification Agent) model: the A
 - **Adversarial critique** with 7 universal + 8 conditional specialized lenses
 - **VS Code sidebar** showing methodology state in real time
 - **Multi-session testing protocol** for Phase 6 continuity across sessions
+- **HLI (Human Lead Index)** — anti-vibe-coding metric (0-10) that measures human leadership across phases, with per-phase breakdown and drop alerts
 - **Meta-iteration** (v1→v2): `start_new_cycle()` resets to Phase 0 preserving all decisions, specs/, and history
 
 ## How It Works
@@ -144,11 +145,38 @@ The methodology includes a natural **LLM Switch Point at Phase 4**. The architec
 | **Compact Guidance** | Summarized instructions injected into every prompt via hook |
 | **Phase 7 Engine Hint** | Forces meta-iteration offer even if model didn't read guidance |
 
+## HLI (Human Lead Index)
+
+An anti-vibe-coding metric that measures how much the human is actually leading the AI-assisted development process. Calculated automatically at each phase transition.
+
+**Formula:** `HLI(phase) = 0.3 × criteriaRatio + 0.3 × decisionDensity + 0.4 × phaseSpecific`
+
+| Phase | Phase-Specific Indicator | Measures |
+|-------|--------------------------|----------|
+| 0 | Phase 0 Score | Problem understanding depth |
+| 1 | Category Diversity | Breadth of architectural decisions |
+| 2-3 | Iteration Depth | Adversarial critique engagement |
+| 4 | Safeguard Health | Process integrity at convergence |
+| 5 | Loop Efficiency | Implementation without excessive retries |
+| 6 | Spec Coverage | Tests mapped to specs (not implementation) |
+| 7 | Lessons Quality | Post-review completeness |
+
+- **Composite score (0-10)** displayed in the VS Code sidebar with per-phase breakdown
+- **Drop alerts** triggered when score falls > 2 points between consecutive phases
+- **Injected into context** so the LLM is aware of process quality in real time
+
+> The market measures AI coding **productivity** (lines/hour, PRs/day). HLI measures **rigor** — whether the human is leading or just accepting output.
+
 ## Companion Extension
 
 Use **[Versus for Claude](https://marketplace.visualstudio.com/items?itemName=jasminemoreira.versus-claude)** for Claude Code integration. Both extensions share the same `.versus/state.json` format.
 
 ## Changelog
+
+### v0.3.3 — 2026-02-27
+
+**Added:**
+- **HLI (Human Lead Index):** Anti-vibe-coding metric (0-10) calculated at each phase transition. Three components: criteria ratio (30%), decision density (30%), phase-specific indicator (40%). Per-phase breakdown in sidebar, drop alerts (>2 points), injected into context hook and MCP tool responses
 
 ### v0.3.2 — 2026-02-27
 

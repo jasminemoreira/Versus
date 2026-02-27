@@ -267,6 +267,8 @@ Or search **"Versus"** in the VS Code Extensions panel.
 
 ## Roadmap
 
+- [x] **HLI (Human Lead Index)** — anti-vibe-coding metric (0-10) measuring human leadership per phase, with sidebar display, drop alerts, and context injection *(v0.3.3)*
+- [x] **Spec-Driven Test Protocol** — tests against specs, not implementation. Test Map, negative tests, spec coverage report *(v0.3.2)*
 - [ ] Custom lens definition (project-specific critique criteria)
 - [ ] Coverage matrix export (JSON / Markdown)
 - [ ] Gate history — track finding evolution across sessions
