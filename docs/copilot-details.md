@@ -173,10 +173,14 @@ Use **[Versus for Claude](https://marketplace.visualstudio.com/items?itemName=ja
 
 ## Changelog
 
-### v0.3.3 — 2026-02-27
+### v0.3.4 — 2026-02-27
 
 **Added:**
 - **HLI (Human Lead Index):** Anti-vibe-coding metric (0-10) calculated at each phase transition. Three components: criteria ratio (30%), decision density (30%), phase-specific indicator (40%). Per-phase breakdown in sidebar, drop alerts (>2 points), injected into context hook and MCP tool responses
+
+### v0.3.3 — 2026-02-27
+
+Stable release. No code changes from v0.3.2 — version bump and packaging only.
 
 ### v0.3.2 — 2026-02-27
 
