@@ -148,6 +148,34 @@ The methodology includes a natural **LLM Switch Point at Phase 4**. The architec
 
 Use **[Versus for Claude](https://marketplace.visualstudio.com/items?itemName=jasminemoreira.versus-claude)** for Claude Code integration. Both extensions share the same `.versus/state.json` format.
 
+## Changelog
+
+### v0.3.2 — 2026-02-27
+
+**Added:**
+- **Spec-Driven Test Protocol (Phase 6):** Tests must map to specs, not implementation. Test Map (MUST DISPLAY), mandatory negative tests (1:2 ratio), distinction between "test green" vs "spec met", spec coverage report as traceable decision
+- **LLM Compatibility section** in README with model tiers (Opus S / Sonnet A / GPT-4.1 B / Mini C), LLM Switch Point strategy, and built-in protections table
+- **Phase 3 post-cycle decision rewrite:** AI computes structural change % and criticals, presents recommendation, user confirms (instead of asking user to choose percentage range)
+- **Phase 5 autonomous implementation:** "Do NOT ask permission between files" — implement sequentially, stop only for blockers
+
+**Changed:** Publisher ID to `JasmineMoreira`. Repository/homepage URLs point to public repo.
+
+### v0.3.1 — 2026-02-27
+
+**Added:**
+- **Phase 7 engine-level hints:** `_phase7Action` in `get_phase_state` and `mark_exit_criterion` responses forces meta-iteration offer regardless of guidance reading
+- **Delivery Target question (Phase 0 Level 5):** Mandatory question — Complete product / MVP / Prototype. Conditions Phase 1 Progressive Scope
+- **R5 Mandatory Display:** Global rule forcing display of essential outputs with MUST DISPLAY markers across all phases
+- **Node.js requirement:** Added to README Quick Start and package.json engines
+
+**Changed:** Phase 1 Progressive Scope conditioned on delivery target. Phase 5 S7 reinforced for autonomous implementation.
+
+**Fixed:** Phase 7 end-of-cycle — `isValidTransition(7, 0)` returned false and `initProject()` wiped context. New dedicated `startNewCycle()` method solves both.
+
+### v0.3.0 — 2026-02-26
+
+Initial stable release: 15 MCP tools, 3 Copilot hooks (inject-context, phase-gate, loop-detector), Gateway Guard, VS Code sidebar, multi-session testing protocol.
+
 ## License
 
 [MIT](LICENSE) - Created by [Jasmine Moreira](https://github.com/jasminemoreira).
