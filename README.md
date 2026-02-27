@@ -260,7 +260,8 @@ Or search **"Versus"** in the VS Code Extensions panel.
 
 ## Documentation
 
-- **[Versus for Claude — Details & Changelog](./docs/claude-details.md)** — features, hooks, safeguards, LLM compatibility, quick start, changelog
+- **[Versus for Claude — Details & Changelog](./docs/claude-details.md)**
+- **[Versus for Copilot — Details & Changelog](./docs/copilot-details.md)**
 
 ---
 
