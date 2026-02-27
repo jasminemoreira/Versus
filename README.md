@@ -144,6 +144,37 @@ The matrix makes visible **second-order information** that generic review misses
 
 ---
 
+## Human Lead Index (HLI): measuring process quality
+
+A structured process can itself be gamed: an operator who approves gates without genuine verification produces *structured vibe coding* — the appearance of rigor without its substance.
+
+Versus addresses this with the **Human Lead Index (HLI)**, a per-phase metric (0–10) that measures how actively you are leading the process rather than ratifying AI output.
+
+```
+HLI(phase) = 0.3 × criteriaRatio + 0.3 × decisionDensity + 0.4 × phaseSpecific
+```
+
+| Phase | Phase-specific indicator | Full score when |
+|-------|--------------------------|-----------------|
+| 0 | Phase 0 score | Score = 100/100 |
+| 1 | Category diversity | 4 decision categories used |
+| 2–3 | Iteration depth | ≥2 critique/simplification cycles |
+| 4 | Safeguard health | All safeguards satisfied |
+| 5 | Loop efficiency | Zero repeated loop iterations |
+| 6 | Spec coverage | Spec-coverage decision recorded |
+| 7 | Lessons quality | All exit criteria met |
+
+**How it works in practice:**
+
+- Score displayed in sidebar with per-phase breakdown
+- 🟢 ≥7 · 🟡 ≥4 · 🔴 <4
+- Drop alert (🔔) when score falls more than 2 points between consecutive phases
+- Score injected into context so the AI is aware of process quality
+
+HLI does not block progression — it makes process quality **observable**. When your score drops, you know you are drifting toward ratification rather than verification. This is the same observability property applied not to the artifact, but to the process itself.
+
+---
+
 ## The verification gap model
 
 The formal model behind Versus defines two agent types:
@@ -216,7 +247,7 @@ The full IACDM technical foundation is documented in:
 
 📄 **[IACDM: Interactive Adversarial Convergence Development Methodology — Technical Foundation](./docs/iacdm.pdf)**
 
-*Jasmine Moreira, 2025–2026*
+📑 **[Preprint — TechRxiv (IEEE)](https://www.techrxiv.org)** · *Jasmine Moreira, 2026*
 
 ---
 
@@ -230,13 +261,17 @@ Versus enforces *double-loop learning*: it questions not just the solution, but 
 
 **Why lenses instead of a single critique pass?**
 
-Generic critique ("attack this suggestion") produces superficial and uniform observations. The same LLM operates all passes — without operationally distinct criteria, diversification is illusory. Specialized lenses with binary criteria constitute functionally distinct verification agents, even when operated by the same model.
+Generic critique ("attack this suggestion") produces superficial and uniform observations. The same LLM operates all rounds — without operationally distinct criteria, diversification is illusory. Specialized lenses with binary criteria constitute functionally distinct verification agents, even when operated by the same model.
 
 This maps directly to ATAM (Kazman et al., 2000): different evaluators attack through distinct quality attributes, but trade-offs are resolved by a single entity maintaining systemic vision.
 
 **Why is the verification agent always external?**
 
 This is not a design choice — it is a structural constraint. A model cannot reliably verify its own output. Self-correction in LLMs has been shown to degrade without external feedback (Huang et al., 2023). The separation between GA and VA is the methodological core that makes verification meaningful.
+
+**Why can you switch models after Phase 4?**
+
+Gate G₄ marks a natural cost-optimization boundary. Phases 0–4 (design) require deep reasoning over ambiguous, incomplete information — use your most capable model. After G₄, the architecture is fully validated and all decisions are persisted in `specs/`. Phases 5–7 operate on well-specified, bounded tasks where a faster, cheaper model performs equivalently. No context is lost — it lives in `specs/`, not in the conversation.
 
 ---
 
