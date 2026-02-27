@@ -8,7 +8,7 @@
 [![Versus · Claude](https://img.shields.io/badge/Versus%20·%20Claude-VS%20Marketplace-c47a00?logo=visual-studio-code&logoColor=white)](https://marketplace.visualstudio.com/items?itemName=JasmineMoreira.versus-claude)
 [![License](https://img.shields.io/badge/license-Proprietary-red)](./LICENSE)
 [![Author](https://img.shields.io/badge/author-Jasmine%20Moreira-blueviolet)](https://github.com/jasminemoreira)
-[![IACDM](https://img.shields.io/badge/methodology-IACDM-4a1942)](./docs/iacdm_technical_foundation_v2_en.md)
+[![IACDM](https://img.shields.io/badge/methodology-IACDM-4a1942)](./docs/iacdm.pdf)
 
 *The AI proposes. Versus critiques.*
 
@@ -287,7 +287,7 @@ The lenses and critique model implemented in Versus are grounded in:
 - METR (2025). Measuring the Impact of Early-2025 AI on Experienced Developer Productivity. *arXiv:2507.09089*.
 - Popper, K. (1959). *The Logic of Scientific Discovery*. Hutchinson.
 
-Full reference list in the [IACDM technical document](./docs/iacdm_technical_foundation_v2_en.md#references).
+Full reference list in the [IACDM technical document](./docs/iacdm.pdf).
 
 ---
 
