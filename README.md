@@ -258,6 +258,13 @@ Or search **"Versus"** in the VS Code Extensions panel.
 
 ---
 
+## Release Notes
+
+- **[Versus for Claude — Release Notes](./docs/claude-release-notes.md)**
+- **[Unified Changelog](./CHANGELOG.md)**
+
+---
+
 ## Roadmap
 
 - [ ] Custom lens definition (project-specific critique criteria)
