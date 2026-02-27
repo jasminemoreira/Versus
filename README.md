@@ -214,7 +214,7 @@ flowchart TD
 
 The full IACDM technical foundation is documented in:
 
-📄 **[IACDM: Interactive Adversarial Convergence Development Methodology — Technical Foundation v2](./docs/iacdm_technical_foundation_v2_en.md)**
+📄 **[IACDM: Interactive Adversarial Convergence Development Methodology — Technical Foundation](./docs/iacdm.pdf)**
 
 *Jasmine Moreira, 2025–2026*
 
