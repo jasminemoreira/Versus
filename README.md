@@ -144,37 +144,6 @@ The matrix makes visible **second-order information** that generic review misses
 
 ---
 
-## Human Lead Index (HLI): measuring process quality
-
-A structured process can itself be gamed: an operator who approves gates without genuine verification produces *structured vibe coding* — the appearance of rigor without its substance.
-
-Versus addresses this with the **Human Lead Index (HLI)**, a per-phase metric (0–10) that measures how actively you are leading the process rather than ratifying AI output.
-
-```
-HLI(phase) = 0.3 × criteriaRatio + 0.3 × decisionDensity + 0.4 × phaseSpecific
-```
-
-| Phase | Phase-specific indicator | Full score when |
-|-------|--------------------------|-----------------|
-| 0 | Phase 0 score | Score = 100/100 |
-| 1 | Category diversity | 4 decision categories used |
-| 2–3 | Iteration depth | ≥2 critique/simplification cycles |
-| 4 | Safeguard health | All safeguards satisfied |
-| 5 | Loop efficiency | Zero repeated loop iterations |
-| 6 | Spec coverage | Spec-coverage decision recorded |
-| 7 | Lessons quality | All exit criteria met |
-
-**How it works in practice:**
-
-- Score displayed in sidebar with per-phase breakdown
-- 🟢 ≥7 · 🟡 ≥4 · 🔴 <4
-- Drop alert (🔔) when score falls more than 2 points between consecutive phases
-- Score injected into context so the AI is aware of process quality
-
-HLI does not block progression — it makes process quality **observable**. When your score drops, you know you are drifting toward ratification rather than verification. This is the same observability property applied not to the artifact, but to the process itself.
-
----
-
 ## The verification gap model
 
 The formal model behind Versus defines two agent types:
@@ -302,7 +271,6 @@ Or search **"Versus"** in the VS Code Extensions panel.
 
 ## Roadmap
 
-- [x] **HLI (Human Lead Index)** — anti-vibe-coding metric (0-10) measuring human leadership per phase, with sidebar display, drop alerts, and context injection *(v0.3.3)*
 - [x] **Spec-Driven Test Protocol** — tests against specs, not implementation. Test Map, negative tests, spec coverage report *(v0.3.2)*
 - [ ] Custom lens definition (project-specific critique criteria)
 - [ ] Coverage matrix export (JSON / Markdown)
